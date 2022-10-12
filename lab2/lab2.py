@@ -21,7 +21,7 @@ warnings.filterwarnings(action='ignore', category=FutureWarning)
 
 def print_graph(y_test, y_pred, title):
     """
-    Dots close to the centre line ==> Better accurate
+    Dots close to the centre line ==> More accurate
     """
     y_values = np.concatenate([y_test.flatten(), y_pred.flatten()])
     y_min, y_max, y_range = np.amin(
